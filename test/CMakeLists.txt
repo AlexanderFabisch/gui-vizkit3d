@@ -7,3 +7,7 @@ rock_testsuite(testGUI suite.cpp testWidget.cpp
 rock_testsuite(testCore suite.cpp testTransformerGraph.cpp
     DEPS vizkit3d
     LIBS ${Boost_THREAD_LIBRARY} ${Boost_SYSTEM_LIBRARY})
+
+rock_testsuite(testPlugins suite.cpp testPlugins.cpp
+    DEPS vizkit3d
+    LIBS ${Boost_THREAD_LIBRARY} ${Boost_SYSTEM_LIBRARY})
