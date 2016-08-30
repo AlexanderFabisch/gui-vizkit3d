@@ -1,0 +1,15 @@
+<library path="vizkit3d-viz">
+
+  <class class_name="TextureBoxVisualization" base_class_name="vizkit3d::VizkitPluginBase">
+    <description>TextureBox Vizkit3d plugin</description>
+  </class>
+
+  <class class_name="ModelVisualization" base_class_name="vizkit3d::VizkitPluginBase">
+    <description>Robot model Vizkit3d plugin</description>
+  </class>
+
+  <class class_name="GridVisualization" base_class_name="vizkit3d::VizkitPluginBase">
+    <description>Grid Vizkit3d plugin</description>
+  </class>
+
+</library>

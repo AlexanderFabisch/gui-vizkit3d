@@ -16,6 +16,7 @@ rock_library(vizkit3d
         CoordinateFrame.cpp
         DefaultManipulator.cpp
         EnableGLDebugOperation.cpp
+        Vizkit3DPluginLoader.cpp
         ${PROPERTY_BROWSER_RESOURCES} 
     MOC
         Vizkit3DPlugin.cpp 
@@ -47,6 +48,8 @@ rock_library(vizkit3d
         CoordinateFrame.hpp
         EnvPluginBase.hpp
         DefaultManipulator.hpp
+        Vizkit3DPluginLoader.hpp
+        Vizkit3DPluginMetaInfo.hpp
         ${HEADERS_EXTRA}
     LIBS ${Boost_THREAD_LIBRARY} ${Boost_SYSTEM_LIBRARY}
     DEPS_CMAKE OpenGL
