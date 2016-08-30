@@ -98,4 +98,7 @@ namespace vizkit3d
     {
         return texbox_filename;
     }
+
+// Export vizkit plugin as class loader plugin
+CLASS_LOADER_REGISTER_CLASS(TextureBoxVisualization, vizkit3d::VizPluginBase)
 }

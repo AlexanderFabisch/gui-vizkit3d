@@ -9,6 +9,7 @@
 #include <osg/PositionAttitudeTransform>
 
 #include <boost/thread/mutex.hpp>
+#include <class_loader/class_loader_register_macro.h>
 
 namespace osgviz 
 {
@@ -496,7 +497,9 @@ class VizkitPluginFactory : public QObject
             else return 0;\
         };\
     };\
-    Q_EXPORT_PLUGIN2(QtPlugin##pluginName, QtPlugin##pluginName)
+    Q_EXPORT_PLUGIN2(QtPlugin##pluginName, QtPlugin##pluginName) \
+    CLASS_LOADER_REGISTER_CLASS(pluginName, vizkit3d::VizPluginBase)
+
 
 /** @deprecated adapter item for legacy visualizations. Do not derive from this
  * class for new designs. Use VizPlugin directly instead.

@@ -142,4 +142,7 @@ namespace vizkit3d
         setDirty();
         emit propertyChanged("model_path");
     }
+
+// Export vizkit plugin as class loader plugin
+CLASS_LOADER_REGISTER_CLASS(ModelVisualization, vizkit3d::VizPluginBase)
 }

@@ -13,5 +13,6 @@
     <depend package="boost" />
     <depend package="base/cmake" />
     <depend package="gui/osgviz/osgviz" />
+    <depend package="tools/plugin_manager" />
     <!--    <depend package="qt-designer" /> !-->
 </package>

@@ -103,4 +103,7 @@ namespace vizkit3d
         grid_color=color;
         setDirty();
     }
+
+// Export vizkit plugin as class loader plugin
+CLASS_LOADER_REGISTER_CLASS(GridVisualization, vizkit3d::VizPluginBase)
 }
