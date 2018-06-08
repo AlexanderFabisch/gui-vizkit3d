@@ -208,9 +208,9 @@ Vizkit3DWidget::Vizkit3DWidget(QWidget* parent,const QString &world_name,bool au
     movedHandler(*this), movingHandler(*this), selectedHandler(*this)
 {
     setEnabledManipulators(false);
-    clickHandler->objectMoved.connect(movedHandler);
+    /*clickHandler->objectMoved.connect(movedHandler);
     clickHandler->objectMoving.connect(movingHandler);
-    selectedObjectConnection = clickHandler->objectSelected.connect(selectedHandler);
+    selectedObjectConnection = clickHandler->objectSelected.connect(selectedHandler);*/
     //currently only this is supported
     current_manipulator = TERRAIN_MANIPULATOR;
 
